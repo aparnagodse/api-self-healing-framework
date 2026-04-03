@@ -1,0 +1,6 @@
+{
+  "login_api": {
+    "endpoint": "/users/9999",
+    "method": "GET"
+  }
+}
