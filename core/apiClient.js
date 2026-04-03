@@ -1,49 +1,18 @@
-import fetch from 'node-fetch';
-
-async function callApi(apiName) {
+async function callApi() {
   const url = "https://jsonplaceholder.typicode.com/users/1";
 
-  for (let attempt = 1; attempt <= 2; attempt++) {
-    console.log(`🚀 Attempt ${attempt}`);
-    console.log("🌐 Calling:", url);
+  console.log("🌐 Calling:", url);
 
-    try {
-      const res = await fetch(url);
+  const res = await fetch(url);
+  const body = await res.json();
 
-      const text = await res.text();
-      console.log("📄 Raw response:", text.slice(0, 200));
+  console.log("📦 Response:", body);
 
-      let body;
-      try {
-        body = JSON.parse(text);
-      } catch (e) {
-        throw new Error("Invalid JSON response");
-      }
-
-      console.log("📦 Parsed:", body);
-
-      // ✅ Success condition
-      if (body && body.id) {
-        console.log("✅ Success");
-        return body;
-      }
-
-      throw new Error("Invalid response structure");
-
-    } catch (err) {
-      console.log("⚠️ Error:", err.message);
-
-      // 🚀 Skip AI in CI
-      if (process.env.CI) {
-        console.log("⚠️ Skipping AI healing in CI");
-        throw err;
-      }
-
-      console.log("🔁 Retrying...");
-    }
+  if (!body || !body.id) {
+    throw new Error("Invalid response");
   }
 
-  throw new Error("❌ API failed after retries");
+  return body;
 }
 
 export { callApi };
