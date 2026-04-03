@@ -2,8 +2,6 @@
 
 # API Self-Healing Framework
 
-[![Playwright Tests](https://github.com/aparnagodse/api-self-healing-framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/aparnagodse/api-self-healing-framework/actions/workflows/playwright.yml)
-
 A modern **API testing framework** built with **Playwright** and **AI-assisted self-healing**, designed to automatically adapt to changes in API responses and ensure reliable test execution.
 
 ---
