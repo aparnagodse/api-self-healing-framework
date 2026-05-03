@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 
 test('Web app basic test', async ({ page }) => {
-
   console.log('🚀 Launching browser and navigating to site...');
 
   await page.goto('https://www.google.com');
@@ -10,16 +9,11 @@ test('Web app basic test', async ({ page }) => {
   // Title validation
   const title = await page.title();
   console.log('📄 Page Title:', title);
-  await expect(page).toHaveTitle(/Example Domain/);
+  await expect(page).toHaveTitle(/Google/);
 
-  // Heading validation
-  const heading = await page.locator('h1').textContent();
-  console.log('🧾 Heading Text:', heading);
-  await expect(page.locator('h1')).toHaveText('Example Domain');
+  // Search box validation
+  const searchBox = page.locator('textarea[name="q"]');
+  await expect(searchBox).toBeVisible();
 
-  // ✅ FIXED paragraph validation
-  const paragraph = page.getByText('This domain is for use in documentation examples');
-  await expect(paragraph).toBeVisible();
-
-  console.log('✅ Web Test completed successfully');
+  console.log('✅ Web test passed');
 });
