@@ -14,6 +14,11 @@ A modern Playwright-based test automation framework designed for API, Web UI, Ac
 - GitHub Actions CI/CD workflow
 - Clean reporting support for test evidence
 
+## 🧠 Framework Architecture
+
+📊 [View Framework Architecture]
+![alt text](<Fullstack Playwright AI driven automation framework.png>)
+
 ## Framework Structure
 
 ```text
@@ -79,6 +84,27 @@ npx playwright test tests/web
 Reporting
 Generate and view Playwright report:
 npx playwright show-report
+
+## Demo Video
+
+This demo showcases:
+- Playwright test execution
+- AI self-healing capability
+- API + UI + Accessibility + Performance testing
+
+▶️ Watch full demo:  
+[View Demo Video](## Demo Video
+
+This demo showcases:
+- Playwright test execution
+- AI self-healing capability
+- API + UI + Accessibility + Performance testing
+
+▶️ Watch full demo:  
+[View Demo Video](https://drive.google.com/file/d/1A1DT-3QVswHYtVJ5rDmKKXfzw5PaI7M5/view?usp=share_link)
+
+
+
 Purpose of This Framework
 This framework demonstrates how AI-assisted automation can improve test stability, reduce maintenance effort and support end-to-end quality engineering across multiple testing layers.
 It is designed as a portfolio-ready framework for modern QA, SDET and Test Automation roles.
