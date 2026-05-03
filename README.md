@@ -1,95 +1,87 @@
-[![Playwright Tests](https://github.com/aparnagodse/api-self-healing-framework/actions/workflows/playwright.yml/badge.svg)](https://github.com/aparnagodse/api-self-healing-framework/actions/workflows/playwright.yml)
+# AI-Driven Self-Healing Playwright Testing Framework
 
-# API Self-Healing Framework
+A modern Playwright-based test automation framework designed for API, Web UI, Accessibility, Performance and Mobile testing, with AI-assisted self-healing capabilities.
 
-A modern **API testing framework** built with **Playwright** and **AI-assisted self-healing**, designed to automatically adapt to changes in API responses and ensure reliable test execution.
+## Key Features
 
----
+- Playwright automation for web and API testing
+- AI-assisted self-healing logic for unstable test failures
+- API testing with reusable client layer
+- Page Object Model structure for UI automation
+- Accessibility testing using axe-core
+- Lighthouse performance validation
+- Mobile test structure for responsive scenarios
+- GitHub Actions CI/CD workflow
+- Clean reporting support for test evidence
 
-## 🚀 Overview
+## Framework Structure
 
-This project demonstrates:
+```text
+core/
+  apiClient.js
+  aiHealer.js
+  accessibility.js
+  lighthouse.js
+  performance.js
 
-- Automated API testing using **Playwright Test**.
-- AI-powered self-healing for failed API tests.
-- Retry mechanisms and error analysis for dynamic endpoints.
-- CI/CD integration with **GitHub Actions** for automated test execution on push/PR.
-- Clear test reporting and GitHub badges for test status visibility.
+pages/
+  BasePage.js
+  LoginPage.js
+  HomePage.js
+  ProductPage.js
+  CartPage.js
+  CheckoutPage.js
 
----
+tests/
+  api/
+  web/
+  e2e/
+  mobile/
+  performance/
 
-## 🛠 Features
-
-- **Self-Healing API Tests:**  
-  Detects failures in API response structure and requests AI guidance to fix tests dynamically.
-
-- **Retry Logic:**  
-  Automatically retries failed API calls with intelligent adjustments.
-
-- **CI/CD Ready:**  
-  Integrates with GitHub Actions to run tests on every commit or PR.
-
-- **Clear Reporting:**  
-  Generates logs and test reports in a structured format for easy debugging.
-
----
-
-## 📂 Project Structure
-api-self-healing-framework/
-│
-├─ core/ # API client and AI healer modules
-├─ tests/ # Playwright API test files
-├─ .github/workflows/ # CI/CD workflow YAML files
-├─ package.json # Node.js project manifest
-├─ playwright.config.ts # Playwright configuration
-└─ README.md # This file
+fixtures/
+utils/
+Tech Stack
 
 
----
+Playwright
 
-## ⚡ Prerequisites
 
-- Node.js >= 20
-- npm >= 9
-- GitHub account (for CI/CD)
-- API access credentials (for AI healer integration)
+JavaScript / TypeScript
 
----
 
-## 💻 Getting Started
+Node.js
 
-1. **Clone the repo**
 
-```bash
-git clone https://github.com/aparnagodse/api-self-healing-framework.git
-cd api-self-healing-framework
+GitHub Actions
 
-2. Install dependencies
+
+axe-core
+
+
+Lighthouse
+
+
+Allure Reporting
+
+
+How to Run
+Install dependencies:
 npm install
-
-3.Run tests locally
+Install Playwright browsers:
+npx playwright install
+Run all tests:
 npx playwright test
-
-4.Check test results in the test-results/ folder.
-
-📈 CI/CD Integration
-Uses GitHub Actions for automated test execution.
-Workflow file: .github/workflows/playwright.yml
-The CI badge above shows the latest test status on the main branch.
-Automatically runs on push and pull_request events.
-
-📖 Example Test Output
-{
-  "id": 1,
-  "name": "Leanne Graham",
-  "username": "Bret",
-  "email": "Sincere@april.biz"
-}{
-  "id": 1,
-  "name": "Leanne Graham",
-  "username": "Bret",
-  "email": "Sincere@april.biz"
-}
-
-✅ Test passed successfully with AI-assisted healing when required.
-
+Run API tests:
+npx playwright test tests/api
+Run web tests:
+npx playwright test tests/web
+Reporting
+Generate and view Playwright report:
+npx playwright show-report
+Purpose of This Framework
+This framework demonstrates how AI-assisted automation can improve test stability, reduce maintenance effort and support end-to-end quality engineering across multiple testing layers.
+It is designed as a portfolio-ready framework for modern QA, SDET and Test Automation roles.
+Author
+Aparna Godse
+Quality Engineering Consultant | AI-driven Automation | Playwright | API Testing | Accessibility | Performance Testing
