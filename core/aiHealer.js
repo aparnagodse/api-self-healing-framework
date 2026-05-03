@@ -1,14 +1,22 @@
-async function getHealingSuggestion(error, config) {
-  console.log("🤖 (Mock AI) Analyzing error...");
+export async function suggestFix(error) {
 
-  // simulate AI delay
-  await new Promise(res => setTimeout(res, 500));
+  const message = error.message.toLowerCase();
 
-  if (config.endpoint.includes('9999')) {
-    return { endpoint: '/users/1' };
+  if (message.includes('timeout')) {
+    return 'Increase timeout or check API response delay';
   }
 
-  return null;
-}
+  if (message.includes('404')) {
+    return 'Check API endpoint URL';
+  }
 
-export { getHealingSuggestion };
+  if (message.includes('500')) {
+    return 'Server issue - check backend logs';
+  }
+
+  if (message.includes('network')) {
+    return 'Check internet or API base URL';
+  }
+
+  return 'Unknown issue - investigate logs and request payload';
+}

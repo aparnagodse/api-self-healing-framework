@@ -1,4 +1,10 @@
 node_modules/
-.env
-test-results/
 playwright-report/
+test-results/
+allure-results/
+
+*.html
+*.json
+*.png
+
+.env
