@@ -38,13 +38,6 @@ An AI-driven Full Stack Test Automation Framework built using Playwright, coveri
 
 ![Execution Summary](screenshots/execution-summary.png)
 
-### ✅ Playwright Test Report
-![Playwright Report](screenshots/Playwright test report.png)
-
----
-
-### ⚡ Test Execution + Accessibility + Performance
-![Execution](screenshots/Execution summary.png)
 
 ### ✅ Playwright Test Report
 Playwright Report
