@@ -38,17 +38,6 @@ An AI-driven Full Stack Test Automation Framework built using Playwright, coveri
 
 ![Execution Summary](screenshots/execution-summary.png)
 
-
-### ✅ Playwright Test Report
-Playwright Report
-
----
-
-### ⚡ Test Execution + Accessibility + Performance
-Execution
-
----
-
 ## 🧩 Framework Structure
 
 ```text
@@ -90,7 +79,6 @@ utils/
 - Allure Reporting
 
 ---
-
 ## ▶️ Demo Video
 
 This demo showcases:
@@ -99,59 +87,33 @@ This demo showcases:
 - AI self-healing capability
 - API + UI + Accessibility + Performance testing
 
-👉 Watch Full Demo
+👉 [Watch Full Demo](https://drive.google.com/file/d/1A1DT-3QVswHYtVJ5rDmKKXfzw5PaI7M5/view?usp=sharing)
 
 ---
 
 ## ⚙️ How to Run
 
----
-
-## 🔧 Fix 3: Commands (VERY important)
-
-Replace your "How to Run" section with:
-
-```markdown
 ## ⚙️ How to Run
 
 ### Install dependencies
 ```bash
 npm install
 
-### Install dependencies
-bash npm install 
-
 ### Install Playwright browsers
-bash npx playwright install 
+npx playwright install
 
 ### Run all tests
-bash npx playwright test 
+npx playwright test
 
 ### Run API tests
-bash npx playwright test tests/api 
+npx playwright test tests/api
 
 ### Run Web tests
-bash npx playwright test tests/web 
+npx playwright test tests/web 
 
----
-
----
-
-## 🔧 Fix 4: Reporting section
-
-```markdown
-## 📊 Reporting
-
-```bash
+📊 Reporting
 npx playwright show-report
----
 
-## 🔧 Fix 5: Demo Video (ADD YOUR LINK)
-
-```markdown
-## ▶️ Demo Video
-
-👉 [Watch Full Demo](https://drive.google.com/file/d/1A1DT-3QVswHYtVJ5rDmKKXfzw5PaI7M5/view?usp=sharing)
 
 ## 💡 What Makes This Framework Different?
 
