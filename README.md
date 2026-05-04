@@ -111,12 +111,12 @@ npx playwright show-report
 ## 📊 Allure Report
 
 ### Dashboard Overview
-![Allure Dashboard](screenshots/allure-dashboard.png)
+![Allure Dashboard](screenshots/Allure-dashboard.png)
 
 ---
 
 ### Failure Analysis
-![Allure Failure](screenshots/allure-failure.png)
+![Allure Failure](screenshots/Allure-failure.png)
 ---
 
 ## 💡 What Makes This Framework Different?
