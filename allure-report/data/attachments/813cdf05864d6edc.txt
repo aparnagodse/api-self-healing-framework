@@ -1,0 +1,7 @@
+♿ Running accessibility scan...
+📍 Page Tested: NAB Login Page - https://ib.nab.com.au/login
+🏆 Axe Accessibility Score: 92/100
+🔦 Running Lighthouse accessibility audit...
+🔦 Lighthouse report generated: nab-login-page-lighthouse-report.html
+🔦 Lighthouse score: 96/100
+🔦 Lighthouse Score: 96/100

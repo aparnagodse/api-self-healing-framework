@@ -1,0 +1,11 @@
+STEP: Open login page
+STEP: Login with valid user
+STEP: Verify inventory page is loaded
+STEP: Add products to cart
+STEP: Validate cart count
+STEP: Open cart
+STEP: Validate cart items
+STEP: Start checkout
+STEP: Validate checkout page
+STEP: Fill checkout details
+STEP: Continue checkout

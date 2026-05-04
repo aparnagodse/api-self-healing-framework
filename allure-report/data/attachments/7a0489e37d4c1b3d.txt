@@ -1,0 +1,3 @@
+STEP: Open login page
+STEP: Login with invalid credentials
+STEP: Validate login error

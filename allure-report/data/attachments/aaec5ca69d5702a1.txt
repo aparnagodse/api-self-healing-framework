@@ -1,0 +1,7 @@
+STEP: Open login page
+STEP: Login with valid credentials
+STEP: Add product to cart
+STEP: Open cart
+STEP: Start checkout
+STEP: Fill incomplete checkout details
+STEP: Continue checkout

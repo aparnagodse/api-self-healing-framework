@@ -7,11 +7,12 @@ export default defineConfig({
     timeout: 10000
   },
   reporter: [
+    ['list'],               // 👈 add this
     ['html'],
     ['allure-playwright']
   ],
   use: {
-    headless: false,
+    headless: true,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     trace: 'retain-on-failure'
