@@ -17,6 +17,7 @@ An AI-driven Full Stack Test Automation Framework built using Playwright, coveri
 - Rich reporting for test execution insights
 
 ---
+
 ## 🧠 Framework Architecture
 
 <p align="center">
@@ -28,15 +29,15 @@ An AI-driven Full Stack Test Automation Framework built using Playwright, coveri
 ## 📸 Demo Screenshots
 
 ### ✅ Playwright Test Report
-
 ![Playwright Report](screenshots/playwright-report.png)
 
 ---
 
 ### ⚡ Test Execution + Accessibility + Performance
-
 ![Execution Summary](screenshots/execution-summary.png)
+
 ---
+
 ## 🧩 Framework Structure
 
 ```text
@@ -64,38 +65,57 @@ tests/
 
 fixtures/
 utils/
+```
+
+---
 
 ## ▶️ Demo Video
 
-👉 [Watch Full Demo](https://drive.google.com/file/d/1A1DT-3QVswHYtVJ5rDmKKXfzw5PaI7M5/view?usp=sharing)
+👉 https://drive.google.com/file/d/1A1DT-3QVswHYtVJ5rDmKKXfzw5PaI7M5/view?usp=sharing
 
 - Playwright test execution  
 - AI self-healing capability  
 - API + UI + Accessibility + Performance testing  
+
+---
 
 ## ⚙️ How to Run
 
 ### Install dependencies
 ```bash
 npm install
+```
+
 ### Install Playwright browsers
+```bash
 npx playwright install
+```
 
 ### Run all tests
+```bash
 npx playwright test
+```
 
 ### Run API tests
+```bash
 npx playwright test tests/api
+```
+
 ### Run Web tests
+```bash
 npx playwright test tests/web
+```
 
 ---
+
 ## 📊 Reporting
 
 ### Playwright Report
 ```bash
 npx playwright show-report
- 
+```
+
+---
 
 ## 📊 Allure Report
 
@@ -106,6 +126,7 @@ npx playwright show-report
 
 ### Failure Analysis
 ![Allure Failure](screenshots/allure-failure.png)
+
 ---
 
 ## 💡 What Makes This Framework Different?
@@ -133,4 +154,4 @@ This framework demonstrates how AI-assisted automation can:
 
 Aparna Godse  
 Quality Engineering Consultant  
-AI-driven Automation | Playwright | API | Accessibility | Performance
+AI-driven Automation | Playwright | API | Accessibility | Performance  
