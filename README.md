@@ -29,6 +29,14 @@ An AI-driven Full Stack Test Automation Framework built using Playwright, coveri
 ## 📸 Demo Screenshots
 
 ### ✅ Playwright Test Report
+![Playwright Report](screenshots/Playwright test report.png)
+
+---
+
+### ⚡ Test Execution + Accessibility + Performance
+![Execution](screenshots/Execution summary.png)
+
+### ✅ Playwright Test Report
 Playwright Report
 
 ---
@@ -40,7 +48,31 @@ Execution
 
 ## 🧩 Framework Structure
 
-text core/   apiClient.js   aiHealer.js   accessibility.js   lighthouse.js   performance.js  pages/   BasePage.js   LoginPage.js   HomePage.js   ProductPage.js   CartPage.js   CheckoutPage.js  tests/   api/   web/   e2e/   mobile/   performance/  fixtures/ utils/ 
+```text
+core/
+  apiClient.js
+  aiHealer.js
+  accessibility.js
+  lighthouse.js
+  performance.js
+
+pages/
+  BasePage.js
+  LoginPage.js
+  HomePage.js
+  ProductPage.js
+  CartPage.js
+  CheckoutPage.js
+
+tests/
+  api/
+  web/
+  e2e/
+  mobile/
+  performance/
+
+fixtures/
+utils/
 
 ---
 
@@ -70,6 +102,19 @@ This demo showcases:
 
 ## ⚙️ How to Run
 
+---
+
+## 🔧 Fix 3: Commands (VERY important)
+
+Replace your "How to Run" section with:
+
+```markdown
+## ⚙️ How to Run
+
+### Install dependencies
+```bash
+npm install
+
 ### Install dependencies
 bash npm install 
 
@@ -87,11 +132,23 @@ bash npx playwright test tests/web
 
 ---
 
+---
+
+## 🔧 Fix 4: Reporting section
+
+```markdown
 ## 📊 Reporting
 
-bash npx playwright show-report 
-
+```bash
+npx playwright show-report
 ---
+
+## 🔧 Fix 5: Demo Video (ADD YOUR LINK)
+
+```markdown
+## ▶️ Demo Video
+
+👉 [Watch Full Demo](https://drive.google.com/file/d/1A1DT-3QVswHYtVJ5rDmKKXfzw5PaI7M5/view?usp=sharing)
 
 ## 💡 What Makes This Framework Different?
 
