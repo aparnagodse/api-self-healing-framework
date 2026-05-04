@@ -37,8 +37,9 @@ An AI-driven Full Stack Test Automation Framework built using Playwright, coveri
 
 ![Execution Summary](screenshots/execution-summary.png)
 ---
-
 ## 🧩 Framework Structure
+
+```text
 core/
   apiClient.js
   aiHealer.js
@@ -64,18 +65,6 @@ tests/
 fixtures/
 utils/
 
----
-
-## 🛠 Tech Stack
-
-- Playwright  
-- JavaScript / TypeScript  
-- Node.js  
-- GitHub Actions  
-- axe-core (Accessibility)  
-- Lighthouse (Performance)  
-- Allure Reporting  
-
 ## ▶️ Demo Video
 
 👉 [Watch Full Demo](https://drive.google.com/file/d/1A1DT-3QVswHYtVJ5rDmKKXfzw5PaI7M5/view?usp=sharing)
@@ -83,12 +72,12 @@ utils/
 - Playwright test execution  
 - AI self-healing capability  
 - API + UI + Accessibility + Performance testing  
+
 ## ⚙️ How to Run
 
 ### Install dependencies
 ```bash
 npm install
-
 ### Install Playwright browsers
 npx playwright install
 
@@ -101,14 +90,12 @@ npx playwright test tests/api
 npx playwright test tests/web
 
 ---
-
 ## 📊 Reporting
 
+### Playwright Report
 ```bash
-
-npx playwright show-report 
-
-## 📊 Allure Report
+npx playwright show-report
+ 
 
 ## 📊 Allure Report
 
