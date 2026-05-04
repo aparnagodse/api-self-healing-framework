@@ -108,6 +108,15 @@ npx playwright test tests/web
 
 npx playwright show-report 
 
+## 📊 Allure Report
+
+### Dashboard Overview
+![Allure Dashboard](screenshots/allure-dashboard.png)
+
+---
+
+### Failure Analysis
+![Allure Failure](screenshots/allure-failure.png)
 ---
 
 ## 💡 What Makes This Framework Different?
