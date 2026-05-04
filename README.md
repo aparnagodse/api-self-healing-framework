@@ -20,6 +20,8 @@ An AI-driven Full Stack Test Automation Framework built using Playwright, coveri
 
 ## 🧠 Framework Architecture
 
+The diagram below illustrates the modular design of the framework, showcasing how API, UI, AI healing, accessibility, and performance layers integrate into a scalable testing solution.
+
 <p align="center">
   <img src="screenshots/architecture.png" width="900"/>
 </p>
@@ -29,11 +31,17 @@ An AI-driven Full Stack Test Automation Framework built using Playwright, coveri
 ## 📸 Demo Screenshots
 
 ### ✅ Playwright Test Report
+
+This report shows the overall execution status of automated tests, including pass/fail results, execution time, and detailed step logs. It provides quick visibility into test health and regression outcomes.
+
 ![Playwright Report](screenshots/playwright-report.png)
 
 ---
 
 ### ⚡ Test Execution + Accessibility + Performance
+
+This combined report demonstrates how functional testing is integrated with accessibility (WCAG checks) and performance (Lighthouse scores), giving a full quality view in a single execution.
+
 ![Execution Summary](screenshots/execution-summary.png)
 
 ---
@@ -41,16 +49,33 @@ An AI-driven Full Stack Test Automation Framework built using Playwright, coveri
 ## 📊 Allure Report
 
 ### Dashboard Overview
+
+The Allure dashboard provides a visual summary of test execution, including trends, pass/fail distribution, and execution insights, making it easier for stakeholders to understand test outcomes.
+
 ![Allure Dashboard](screenshots/allure-dashboard.png)
 
 ---
 
 ### Failure Analysis
+
+This view highlights failed tests with detailed debugging information such as error messages, screenshots, logs, and execution traces, helping quickly identify root causes.
+
 ![Allure Failure](screenshots/allure-failure.png)
 
 ---
 
-## 🤖 AI Failure Analysis
+## 🤖 AI Failure Analysis (Allure Integration)
+
+The framework includes an AI-driven failure analysis layer that automatically detects test failures, categorises the likely root cause, and provides actionable recommendations directly inside the Allure report.
+
+In the example below:
+
+- The failure is identified as a **Locator Issue**
+- The AI engine analyses the error message and classifies the root cause
+- A suggested fix is generated to help resolve the issue quickly
+- A confidence score indicates the reliability of the recommendation
+
+This helps reduce debugging time, improves test stability, and supports faster root cause analysis — aligning with modern AI-assisted quality engineering practices.
 
 ![AI Failure Analysis](screenshots/allure-ai-analysis.png)
 
@@ -117,11 +142,25 @@ npx allure open allure-report
 
 - AI-driven failure analysis with suggestions
 - Self-healing automation approach
-- Full-stack testing (API + UI + Accessibility + Performance)
-- Enterprise-level reporting with Allure
+- Full-stack testing across API, UI, Accessibility and Performance layers
+- Enterprise-level reporting using Playwright HTML reports and Allure
+- Clear execution evidence through screenshots, logs and failure analysis
+
+---
+
+## 🎯 Purpose
+
+This framework demonstrates how AI-assisted automation can:
+
+- Improve test stability
+- Reduce maintenance effort
+- Enable full-stack quality validation
+- Support modern QA, SDET, Test Lead and Quality Engineering roles
 
 ---
 
 ## 👩‍💻 Author
 
-Aparna Godse
+Aparna Godse  
+Quality Engineering Consultant  
+AI-driven Automation | Playwright | API | Accessibility | Performance
