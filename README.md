@@ -14,7 +14,7 @@ An AI-driven Full Stack Test Automation Framework built using Playwright, coveri
 - Performance validation using Lighthouse
 - Mobile testing structure for responsive scenarios
 - CI/CD integration using GitHub Actions
-- Rich reporting for test execution insights
+- Allure reporting with AI insights
 
 ---
 
@@ -35,6 +35,24 @@ An AI-driven Full Stack Test Automation Framework built using Playwright, coveri
 
 ### ⚡ Test Execution + Accessibility + Performance
 ![Execution Summary](screenshots/execution-summary.png)
+
+---
+
+## 📊 Allure Report
+
+### Dashboard Overview
+![Allure Dashboard](screenshots/allure-dashboard.png)
+
+---
+
+### Failure Analysis
+![Allure Failure](screenshots/allure-failure.png)
+
+---
+
+## 🤖 AI Failure Analysis
+
+![AI Failure Analysis](screenshots/allure-ai-analysis.png)
 
 ---
 
@@ -71,87 +89,39 @@ utils/
 
 ## ▶️ Demo Video
 
-👉 https://drive.google.com/file/d/1A1DT-3QVswHYtVJ5rDmKKXfzw5PaI7M5/view?usp=sharing
-
-- Playwright test execution  
-- AI self-healing capability  
-- API + UI + Accessibility + Performance testing  
+👉 https://drive.google.com/file/d/1A1DT-3QVswHYtVJ5rDmKKXfzw5PaI7M5/view
 
 ---
 
 ## ⚙️ How to Run
 
-### Install dependencies
 ```bash
 npm install
-```
-
-### Install Playwright browsers
-```bash
 npx playwright install
-```
-
-### Run all tests
-```bash
 npx playwright test
-```
-
-### Run API tests
-```bash
-npx playwright test tests/api
-```
-
-### Run Web tests
-```bash
-npx playwright test tests/web
 ```
 
 ---
 
 ## 📊 Reporting
 
-### Playwright Report
 ```bash
 npx playwright show-report
+npx allure generate allure-results --clean -o allure-report
+npx allure open allure-report
 ```
-
----
-
-## 📊 Allure Report
-
-### Dashboard Overview
-![Allure Dashboard](screenshots/allure-dashboard.png)
-
----
-
-### Failure Analysis
-![Allure Failure](screenshots/allure-failure.png)
 
 ---
 
 ## 💡 What Makes This Framework Different?
 
-- AI-assisted self-healing approach  
-- Covers Functional + API + Accessibility + Performance testing  
-- Designed for enterprise-scale automation  
-- Modular and scalable architecture  
-- Demonstrates full-stack quality engineering capability  
-
----
-
-## 🎯 Purpose
-
-This framework demonstrates how AI-assisted automation can:
-
-- Improve test stability  
-- Reduce maintenance effort  
-- Enable full-stack quality validation  
-- Support modern QA, SDET, and Test Lead roles  
+- AI-driven failure analysis with suggestions
+- Self-healing automation approach
+- Full-stack testing (API + UI + Accessibility + Performance)
+- Enterprise-level reporting with Allure
 
 ---
 
 ## 👩‍💻 Author
 
-Aparna Godse  
-Quality Engineering Consultant  
-AI-driven Automation | Playwright | API | Accessibility | Performance  
+Aparna Godse
